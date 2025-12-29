@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Chat UI</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 6px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen  bg-amber-400 text-gray-800">
+
+  <!-- Main Layout -->
+  <div class="max-w-7xl mx-auto h-screen grid grid-cols-12 p-4">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside
+      class="hidden md:flex md:col-span-4 lg:col-span-3
+             bg-white rounded-xl shadow-sm p-3 flex-col overflow-hidden -mr-[70px]">
+
+      <!-- Sidebar Header -->
+      <div class="flex items-center justify-between mbpx-4 py-2 rounded-lg">
+        <input type="text" placeholder="🔍︎ Search or Start a new chat...."
+            class="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 "
+          />
+        <button>
+          <img src="images/dot.png" class="w-5 h-5 " />
+        </button>
+      </div>
+
+      <!-- Chat List -->
+      <div class="flex-1 overflow-auto space-y-3 scrollbar-thin">
+
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/amuruth.jpeg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Amruth Krishna</p>
+              <span class="text-xs text-gray-700">3:24 PM</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">Where are you da?</p>
+          </div>
+        </a>
+
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/dharaneesh.jpg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">DharaniMugil</p>
+              <span class="text-xs text-gray-700">1:32 PM</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">I’m really tired of everything today.</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 bg-blue-300">
+          <img src="images/images.jpg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Elamparuthi</p>
+              <span class="text-xs text-gray-700">12:00 AM</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">I feel like I’m not doing enough.</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/sanjeevi.jpg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Sanjeevi Rajan</p>
+              <span class="text-xs text-gray-700">4:30 PM</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">Hey bro, what are you doing?</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/mithul.jpeg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Mithul varshan (CSE)</p>
+              <span class="text-xs text-gray-700">Yesterday</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">Hii</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/hemanth.jpg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Hemath</p>
+              <span class="text-xs text-gray-700">Yesterday</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">What's Happen? bro</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 ">
+          <img src="images/yathav.jpeg" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Yadhav</p>
+              <span class="text-xs text-gray-700">10:12 AM</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">📷 Photo</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/Esakki.png" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Esakki Vignesh</p>
+              <span class="text-xs text-gray-700">28/12/2025</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">📷 Photo</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/Praneesh.png" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Praneesh</p>
+              <span class="text-xs text-gray-700">07/11/2025</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">I need Help?</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/guhanesh.png" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Guhaneesh</p>
+              <span class="text-xs text-gray-700">06/11/2025</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">Case n Cover...</p>
+          </div>
+        </a>
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
+          <img src="images/dharun.png" class="w-10 h-10 rounded-full" />
+          <div class="flex-1 min-w-0">
+            <div class="flex justify-between">
+              <p class="font-medium truncate">Dharunkumar</p>
+              <span class="text-xs text-gray-700">14/12/2025</span>
+            </div>
+            <p class="text-sm text-gray-700 truncate">Your team scored a new high…</p>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Bottom Nav -->
+      <nav class="flex justify-around items-center border-t text-xs text-gray-500">
+        <button class="flex flex-col items-center gap-1 text-blue-600">
+          <img src="images/chat icon.svg" class="w-4 h-4 mt-[19px]" />
+          <span>Chats</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 mt-[19px]">
+          📞
+          <span class="text-gray-700">Calls</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 mt-[19px]">
+          👤
+          <span class="text-gray-700">Users</span>
+        </button>
+        <button class="flex flex-col items-center gap-1 mt-[15px]">
+          <img src="images/ganesan.jpg" class="w-6 h-6 rounded-full border-2 border-blue-500 opacity-100" />
+          <span class="text-gray-700">Profile</span>
+        </button>
+      </nav>
+
+    </aside>
+
+    <!-- ================= CHAT AREA ================= -->
+    <main
+      class="col-span-12 md:col-span-8 lg:col-span-9
+             bg-white rounded-xl shadow-sm flex flex-col overflow-hidden ml-[78px] -mr-[20px]">
+
+      <!-- Chat Header -->
+      <header class="flex items-center gap-4 px-4 py-3 border-b">
+        <img src="images/images.jpg" class="w-10 h-10 rounded-full border-2 border-orange-" />
+        <div class="flex-1" >
+          <h3 class="font-semibold">Elamparuthi</h3>
+          <p class="text-sm text-green-600">Online</p>
+        </div>
+        <div class="flex gap-6">
+          <button>📞</button>
+          <button>📹</button>
+          <button><img src="images/dot.png" class="w-5 h-5" /></button>
+        </div>
+      </header>
+
+      <!-- Messages -->
+      <section
+        class="flex-1 overflow-auto p-4 space-y-4 scrollbar-thin bg-gray-200">
+
+        <div class="text-center text-xs text-gray-400 ">Today</div>
+
+        <!-- Incoming -->
+        <div class="flex items-start gap-3">
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-2 shadow-lg shadow-blue-600">
+            <p class="text-sm">Hey bro, what are you doing?</p>
+            <span class="text-xs text-gray-400">4:56 pm</span>
+          </div>
+        </div>
+
+        <!-- Outgoing -->
+        <div class="flex justify-end">
+          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
+            Just learning Tailwind CSS 😄 You?
+            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+          </div>
+        </div>
+
+        <!-- Incoming -->
+        <div class="flex items-start gap-3 ">
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
+            <p class="text-sm">Same here! Borders and margins are confusing me</p>
+            <span class="text-xs text-gray-400">5:00 pm</span>
+          </div>
+        </div>
+         <!-- Outgoing -->
+        <div class="flex justify-end">
+          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
+           Haha, once you practice, it becomes easy
+            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
+            <p class="text-sm">True! Let’s build a small chat UI together..</p>
+            <span class="text-xs text-gray-400">5:00 pm</span>
+          </div>
+        </div>
+        <div class="flex justify-end">
+          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
+            Deal 🤝 Let’s start now!
+            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+          </div>
+        </div>
+         <div class="flex items-start gap-3">
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
+            <p class="text-sm">Nice! Let’s build a project.</p>
+            <span class="text-xs text-gray-400">5:00 pm</span>
+          </div>
+        </div>
+         <div class="flex justify-end">
+          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
+      👍
+            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Message Input -->
+      <form class="border-t px-4 py-3 bg-white">
+        <div class="flex items-center gap-3">
+           🔗 😊
+          <input
+            type="text"
+            placeholder="Type your message..."
+            class="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 border-2 border-gray-400"
+          />
+          🎙️
+          <button
+            class="bg-green-600 text-white px-4 py-2 rounded-full hover hover:bg-green-800 shadow-sm bg-blue-900 p-4 rounded-lm">
+            Send
+          </button>
+        </div>
+      </form>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
