@@ -4,8 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Responsive Chat UI</title>
-
-  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -19,32 +17,32 @@
   </style>
 </head>
 
-<body class="min-h-screen  bg-amber-400 text-gray-800">
+<body class="min-h-screen bg-[#02284F] text-gray-800">
 
-  <!-- Main Layout -->
-  <div class="max-w-7xl mx-auto h-screen grid grid-cols-12 p-4">
+  
+  <div class="max-w-7xl mx-auto h-screen grid grid-cols-12 p-4 ">
 
-    <!-- ================= SIDEBAR ================= -->
+   
     <aside
       class="hidden md:flex md:col-span-4 lg:col-span-3
-             bg-white rounded-xl shadow-sm p-3 flex-col overflow-hidden -mr-[70px]">
+             bg-white rounded-xl shadow-sm p-3 flex-col overflow-hidden -mr-[70px] border-2 border-emerald-300">
 
       <!-- Sidebar Header -->
       <div class="flex items-center justify-between mbpx-4 py-2 rounded-lg">
         <input type="text" placeholder="🔍︎ Search or Start a new chat...."
-            class="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300 "
+            class="flex-1 border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300  border-2 border-gray-300 "
           />
-        <button>
-          <img src="images/dot.png" class="w-5 h-5 " />
+        <button title="More options">
+          <img src="images/dot.png" class="w-5 h-5 " alt="More options" />
         </button>
       </div>
 
       <!-- Chat List -->
       <div class="flex-1 overflow-auto space-y-3 scrollbar-thin">
 
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/amuruth.jpeg" class="w-10 h-10 rounded-full" />
-          <div class="flex-1 min-w-0">
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/amuruth.jpeg" class="w-10 h-10 rounded-full" alt="Amruth Krishna" />
+          <div class="flex-1 min-w-0 ">
             <div class="flex justify-between">
               <p class="font-medium truncate">Amruth Krishna</p>
               <span class="text-xs text-gray-700">3:24 PM</span>
@@ -53,18 +51,18 @@
           </div>
         </a>
 
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/dharaneesh.jpg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/dharaneesh.jpg" class="w-10 h-10 rounded-full" alt="Dharaneesh" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Dharaneesh</p>
               <span class="text-xs text-gray-700">1:32 PM</span>
             </div>
-            <p class="text-sm text-gray-700 truncate">I’m really tired of everything today.</p>
+            <p class="text-sm text-gray-700 truncate">I’m really tired of everything today...</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 bg-blue-300">
-          <img src="images/images.jpg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 bg-blue-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/images.jpg" class="w-10 h-10 rounded-full" alt="Elamparuthi" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Elamparuthi</p>
@@ -73,8 +71,8 @@
             <p class="text-sm text-gray-700 truncate">I feel like I’m not doing enough.</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/sanjeevi.jpg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/sanjeevi.jpg" class="w-10 h-10 rounded-full" alt="Sanjeevi Rajan" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Sanjeevi Rajan</p>
@@ -83,38 +81,38 @@
             <p class="text-sm text-gray-700 truncate">Hey bro, what are you doing?</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/mithul.jpeg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/mithul.jpeg" class="w-10 h-10 rounded-full" alt="Mithul varshan (CSE)" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Mithul varshan (CSE)</p>
               <span class="text-xs text-gray-700">Yesterday</span>
             </div>
-            <p class="text-sm text-gray-700 truncate">Hii</p>
+            <p class="text-sm text-gray-700 truncate">Hii...</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/hemanth.jpg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/hemanth.jpg" class="w-10 h-10 rounded-full" alt="Hemanth" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
-              <p class="font-medium truncate">Hemath</p>
+              <p class="font-medium truncate">Hemanth</p>
               <span class="text-xs text-gray-700">Yesterday</span>
             </div>
-            <p class="text-sm text-gray-700 truncate">What's Happen? bro</p>
+            <p class="text-sm text-gray-700 truncate">What's going on? bro</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 ">
-          <img src="images/yathav.jpeg" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out ">
+          <img src="images/yathav.jpeg" class="w-10 h-10 rounded-full" alt="Yadhav" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Yadhav</p>
-              <span class="text-xs text-gray-700">10:12 AM</span>
+              <span class="text-xs text-gray-700">27/12/2025</span>
             </div>
             <p class="text-sm text-gray-700 truncate">📷 Photo</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/Esakki.png" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/Esakki.png" class="w-10 h-10 rounded-full" alt="Esakki Vignesh" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Esakki Vignesh</p>
@@ -123,8 +121,8 @@
             <p class="text-sm text-gray-700 truncate">📷 Photo</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/Praneesh.png" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/Praneesh.png" class="w-10 h-10 rounded-full" alt="Praneesh" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Praneesh</p>
@@ -133,8 +131,8 @@
             <p class="text-sm text-gray-700 truncate">I need Help?</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/guhanesh.png" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/guhanesh.png" class="w-10 h-10 rounded-full" alt="Guhaneesh" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Guhaneesh</p>
@@ -143,8 +141,8 @@
             <p class="text-sm text-gray-700 truncate">Case n Cover...</p>
           </div>
         </a>
-        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400">
-          <img src="images/dharun.png" class="w-10 h-10 rounded-full" />
+        <a href="#" class="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-400 hover:bg-gray-400 hover:scale-90 transition-transform duration-100 ease-in-out">
+          <img src="images/dharun.png" class="w-10 h-10 rounded-full" alt="Dharunkumar" />
           <div class="flex-1 min-w-0">
             <div class="flex justify-between">
               <p class="font-medium truncate">Dharunkumar</p>
@@ -159,7 +157,7 @@
       <!-- Bottom Nav -->
       <nav class="flex justify-around items-center border-t text-xs text-gray-500">
         <button class="flex flex-col items-center gap-1 text-blue-600">
-          <img src="images/chat icon.svg" class="w-4 h-4 mt-[19px]" />
+          <img src="images/chat icon.svg" class="w-4 h-4 mt-[19px]" alt="Chat" />
           <span>Chats</span>
         </button>
         <button class="flex flex-col items-center gap-1 mt-[19px]">
@@ -171,29 +169,30 @@
           <span class="text-gray-700">Users</span>
         </button>
         <button class="flex flex-col items-center gap-1 mt-[15px]">
-          <img src="images/ganesan.jpg" class="w-6 h-6 rounded-full border-2 border-blue-500 opacity-100" />
+          <img src="images/ganesan.jpg" class="w-6 h-6 rounded-full border-2 border-blue-500 opacity-100" alt="Profile" />
           <span class="text-gray-700">Profile</span>
         </button>
       </nav>
 
     </aside>
 
-    <!-- ================= CHAT AREA ================= -->
+   
     <main
       class="col-span-12 md:col-span-8 lg:col-span-9
-             bg-white rounded-xl shadow-sm flex flex-col overflow-hidden ml-[78px] -mr-[20px]">
+             bg-[#099940] rounded-xl shadow-sm flex flex-col overflow-hidden ml-[78px] -mr-[20px] border-2 border-emerald-300">
 
       <!-- Chat Header -->
       <header class="flex items-center gap-4 px-4 py-3 border-b">
-        <img src="images/images.jpg" class="w-10 h-10 rounded-full border-2 border-orange-" />
+        <img src="images/images.jpg" class="w-10 h-10 rounded-full border-2 border-orange-" alt="Elamparuthi" />
         <div class="flex-1" >
-          <h3 class="font-semibold">Elamparuthi</h3>
-          <p class="text-sm text-green-600">Online</p>
+          <h3 class=" text-xl font-serif ">Elamparuthi</h3>
+          <p class="font-serif text-[#2AB8F5]">Online</p>
         </div>
-        <div class="flex gap-6">
-          <button>📞</button>
-          <button>📹</button>
-          <button><img src="images/dot.png" class="w-5 h-5" /></button>
+        <div class="flex gap-6 ">
+          <button class="hover:bg-white hover:scale-110 transition-transform duration-100 ease-in-out">📞</button>
+          <button class="hover:bg-white hover:scale-110 transition-transform duration-100 ease-in-out">📹</button>
+          <button title="More options">
+            <img src="images/dot.png" class="w-5 h-5 hover:bg-white hover:scale-110 transition-transform duration-100 ease-in-out" /></button>
         </div>
       </header>
 
@@ -201,14 +200,14 @@
       <section
         class="flex-1 overflow-auto p-4 space-y-4 scrollbar-thin bg-gray-200">
 
-        <div class="text-center text-xs text-gray-400 ">Today</div>
+        <div class="text-center text-xs text-gray-600 ">Today</div>
 
         <!-- Incoming -->
         <div class="flex items-start gap-3">
-          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" alt="Elamparuthi" />
           <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-2 shadow-lg shadow-blue-600">
             <p class="text-sm">Hey bro, what are you doing?</p>
-            <span class="text-xs text-gray-400">4:56 pm</span>
+            <span class="text-xs text-gray-500">4:56 pm</span>
           </div>
         </div>
 
@@ -222,43 +221,101 @@
 
         <!-- Incoming -->
         <div class="flex items-start gap-3 ">
-          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500 mt-[10px]" alt="Elamparuthi" />
           <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
             <p class="text-sm">Same here! Borders and margins are confusing me</p>
-            <span class="text-xs text-gray-400">5:00 pm</span>
+            <span class="text-xs text-gray-500">5:00 pm</span>
           </div>
         </div>
          <!-- Outgoing -->
         <div class="flex justify-end">
           <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
            Haha, once you practice, it becomes easy
-            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+            <div class="text-xs text-blue-200 text-right mt-1">5:10 pm</div>
           </div>
         </div>
         <div class="flex items-start gap-3">
-          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
-          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
+          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500 mt-[10px]" alt="Elamparuthi" />
+          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600 ">
             <p class="text-sm">True! Let’s build a small chat UI together..</p>
-            <span class="text-xs text-gray-400">5:00 pm</span>
+            <span class="text-xs text-gray-500">5:12 pm</span>
           </div>
         </div>
         <div class="flex justify-end">
           <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
             Deal 🤝 Let’s start now!
-            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+            <div class="text-xs text-blue-200 text-right mt-1">5:15 pm</div>
           </div>
         </div>
-         <div class="flex items-start gap-3">
-          <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500" />
-          <div class="bg-white px-4 py-2 rounded-lg shadow-sm max-w-md shadow-lg shadow-blue-600">
-            <p class="text-sm">Nice! Let’s build a project.</p>
-            <span class="text-xs text-gray-400">5:00 pm</span>
-          </div>
-        </div>
+<div class="flex items-end gap-3 max-w-[80%] mt-55px">
+
+  <!-- Avatar -->
+  <img src="images/images.jpg" class="w-9 h-9 rounded-full border-2 border-green-600 shadow-lg shadow-blue-500 "
+     alt="Elamparuthi" />
+
+  <!-- Voice message bubble -->
+  <div class="bg-white rounded-2xl shadow-md px-5 py-4 flex items-center gap-3 w-[300px] shadow-lg shadow-blue-500">
+    
+
+    <!-- Play button -->
+    <button class="bg-green-400 hover:bg-blue-400 transition p-3 rounded-full" title="Play voice message">
+      <svg class="w-4 h-4 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.556 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+          clip-rule="evenodd" />
+          
+      </svg>
+      
+    </button>
+    
+
+    <!-- Waveform -->
+    <div class="flex items-center gap-[4px] flex-1">
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-3 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-5 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-3 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-5 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      <span class="w-[2px] h-4 bg-blue-500 rounded-full"></span>
+      <span class="w-[2px] h-2 bg-blue-400 rounded-full"></span>
+      
+    </div>
+    
+
+    <!-- Duration -->
+    <span class="text-xs text-gray-500">1:20</span>
+
+    <!-- Mic avatar -->
+    <div class="relative">
+      <img src="images/images.jpg"
+           class="w-7 h-7 rounded-full"
+           alt="Elamparuthi" />
+      <span
+        class="absolute -bottom-1 -right-1 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
+    </div>
+
+  </div>
+  
+</div>
+
          <div class="flex justify-end">
-          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-3">
+          <div class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow-sm max-w-md -mt-6">
       👍
-            <div class="text-xs text-blue-200 text-right mt-1">4:58 pm</div>
+            <div class="text-xs text-blue-200 text-right mt-1">5:18 pm</div>
           </div>
         </div>
 
